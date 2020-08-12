@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>Forms with Div</title>
+</head>
+<style>
+.form1{
+  border: 5px outset red;
+  background-color: lightblue;
+  text-align: center;
+}
+
+.form2{
+  border: 5px outset yellow;
+  background-color: lightgreen;
+  text-align: center;
+}
+</style>
+<body>
+<div class="form1">
+<form method="post">
+    	<table cellpadding = "5" cellspacing = "5">
+        <thead >
+        <th style="border-bottom: 1px solid black">
+        <caption>"Visitors Information"</caption>
+        </th>
+        </thead>
+        <tbody>
+        
+    		<tr>
+            	<td> Enter Email Address:
+                <input type="text"></td>
+            </tr>
+            
+            <tr>
+            	<td>Web Interest:<input type="checkbox" name="research" value="on">Research
+                <input type="checkbox" name="purchase" value="on">Purchase</td>
+            </tr>
+            
+            <tr>
+            	<td>Profession: <select name = "dropdown">
+            		   <option selected>Select One</option>
+			           <option value = "Student">Student</option>
+                       <option value = "Student">Job</option>
+                       <option value = "Student">Business</option>
+         		</select></td>
+            </tr>
+            
+            <tr>
+            	<td>Want us to send Junk emails:
+                <input type="radio" value="absolutely">Absolutely
+                <input type="radio" value="no way">No way
+                </td>
+            </tr>
+            
+           <tr> <td><input type = "submit" name = "submit" value = "Submit" />
+         <input type = "reset" name = "reset"  value = "Reset" />
+    		</td></tr>
+            </tbody>
+    	</table>
+</form>
+</div>
+<br>
+<div class="form2">
+<form method="Post" >
+Username:<input type="text" name="uname"><br><br>
+Password:<input type="password" name="pwd"><br><br>
+Confirm password:<input type="password" name="cpwd"><br><br>
+Gender: <input type="radio" value="male">Male
+		<input type="radio" value="female">Female
+        <input type="radio" value="others">Others<br><br>
+Address:<br>
+<textarea rows = "5" cols = "50" name = "address"></textarea>
+<br><br>
+Profession: <select name = "dropdown">
+            		   <option selected>Select One</option>
+			           <option value = "Student">Student</option>
+                       <option value = "Student">Job</option>
+                       <option value = "Student">Business</option>
+         		</select><br><br>
+<input type = "submit" name = "submit" value = "Submit" />
+<input type = "reset" name = "reset"  value = "Reset" />
+<br><br>
+</form>
+
+</div>
+
+</body>
+</html>
+
